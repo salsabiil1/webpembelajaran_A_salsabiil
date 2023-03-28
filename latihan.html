@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header { 
+  background-color: #736def;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #579df4;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> SMP NEGERI 3 TEMANGGUNG </h1>
+  <p>Jln. Jend Sudirman No. 21, Jampiroso, Kec. Temanggung, Kab. Temanggung Prov. Jawa Tengah.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">PROFIL</a>
+  <a href="#">KONTAK</a>
+  <a href="#">GALERI</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>INFORMASI</h2>
+    <p> Hari kedua semarak HUT Spenaga ke-44 diisi dengan kegiatan jalan sehat dan bakti sosial membagikan sembako, Selasa 14 Februari 2023. Antusiasme warga sekolah patut diapresiasi dalam kegiatan tersebut. Jalan sehat diikuti seluruh warga sekolah yang terdiri guru, tenaga kependidikan dan siswa, komite dan orang tua siswa juga dipersilakan. Kegiatan ini diawali dengan sambutan oleh Kepala SMP Negeri 3 Temanggung, Ketua Komite, serta ketua panita
+        Selain kegiatan jalan sehat, SMP Negeri 3 Temanggung juga mengadakan kegiatan bakti sosial membagikan sembako. Sasaran pembagian sembako meliputi warga lingkungan sekitar SMP Negeri 3 Temanggung. Pembagian sembako melibatkan guru dan OSIS SMP Negeri 3 Temanggung.  Kegiatan jalan sehat dan bakti sosial ini berjalan dengan baik dan lancar 
+        .</p>
+  </div>
+  
+  <div class="column">
+    <h2>MPLS TAHUN 2023</h2>
+    <p>Kemarin kita telah mengenal, bagaimana pembelajaran di SMP Negeri 3 Temanggung. Dalam sebuah pembelajaran tentu saja tidak hanya sistem yang perlu kita ketahui namun peraturan oun harus kita terapkan. Di dalam sebuah pendidikan, hal ini disebut dengan tata tertib sekolah.
+        Selain itu, dalam pendidikan tak hanya mengasah kemampuan akademik siswa. Tentu kalian memiliki bakat minat yang bisa jadi merupakan hal istimewa dalam diri kalian. Nah oleh karenanya SMP Negeri 3 Temanggung juga memfasilitasi kalian untuk mengembangkan hal tersebut.
+        Baik berikut merupakan agenda kegiatan pada hari ini yang bisa kalian akses melalui akun web resmi SMP Negeri 3 Temanggung,
+        https://www.smpn3tmg.sch.id.</p>
+  </div>
+  
+  <div class="column">
+    <h2>SEPUTAR PENDAFTARAN</h2>
+    <p>Menerapkan Sistem pendaftaran Online PPDB Temanggung, dengan system Online Orang tua dapat melihat profil sekolah melalui laman http://sekolah.data.kemdikbud.go.id/, SMP Negeri 3 Temanggung Terbagi dalam 6 Rombel KUOTA 192, Siswa Mendaftar Melalui laman https://ppdb.temanggungkab.go.id/
+        Jalur Pendaftaran Online
+        70 % Zonasi sebanyak 134 peserta didik
+        15% Afirmasi  Sebanyak 29 peserta didik
+        10% Prestasi Sebanyak 19 peserta didik
+        5% Perpindahan Orang tua 10 peserta didik</p>
+  </div>
+</div>
+
+</body>
+</html>
